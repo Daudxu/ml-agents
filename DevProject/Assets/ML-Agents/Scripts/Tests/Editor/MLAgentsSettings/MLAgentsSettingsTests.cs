@@ -162,7 +162,7 @@ namespace MLAgentsExamples.Tests.Settings
             MLAgentsSettingsManager.Settings.EditorPort = 8000; // change to something not default
 
             mockProvider.Instance?.Dispose();
-            MLAgentsSettingsManager.Destroy();
+            MLAgentsSettingsManager.Destroy(); 
 
             mockProvider.CreateMLAgentsSettingsProvider();
             Assert.AreEqual(8000, MLAgentsSettingsManager.Settings.EditorPort);
